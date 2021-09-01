@@ -1,0 +1,17 @@
+<table>
+    <tr>
+        <th>ürün adı</th>
+        <th>birim fiyatı</th>
+        <th>Açıklama</th>
+        <th>Stok adedi</th>
+        <th>Sipariş adedi</th>
+    </tr>
+    <tr *ngFor="let cartItem of cartItems">
+        <td>{{cartItem.product.name}}</td>
+        <td>{{cartItem.product.unitPrice}}</td>
+        <td>{{cartItem.product.quantityPerUnit}}</td>
+        <td>{{cartItem.product. unitsInstock}}</td>
+        <td>{{cartItem.quantity}}</td>
+
+    </tr>
+</table>
